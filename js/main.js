@@ -29,36 +29,46 @@ require(["jquery", "underscore", "SectionManager", "CommonFunction", "fancybox",
 
     $(document).ready(function(){
 
+        var gObj = window.lno;
+            gObj.lang = (gObj.lang) ? gObj.lang : "en";
 
         window.sectionManager = new SM.manager({
             sectionList:{
                 landingSection  : new SM.base($("#homeContent")),
-                aboutSection    : new SM.base($("#aboutContent"), "about.php"),
-                projectSection  : new SM.base($("#projectContent"), "project.php"),
-                newsSection     : new SM.base($("#newsContent"), "news.php"),
-                awardSection    : new SM.base($("#awardContent"), "award.php"),
-                susSection      : new SM.base($("#susContent"), "sus.php"),
-                careerSection   : new SM.base($("#careerContent"), "career.php"),
-                contactSection  : new SM.base($("#contactContent"), "contact.php"),
+                aboutSection    : new SM.base($("#aboutContent"), gObj.lang+"/about.php"),
+                projectSection  : new SM.base($("#projectContent"), gObj.lang+"/project.php"),
+                newsSection     : new SM.base($("#newsContent"), gObj.lang+"/news.php"),
+                awardSection    : new SM.base($("#awardContent"), gObj.lang+"/award.php"),
+                susSection      : new SM.base($("#susContent"), gObj.lang+"/sus.php"),
+                careerSection   : new SM.base($("#careerContent"), gObj.lang+"/career.php"),
+                contactSection  : new SM.base($("#contactContent"), gObj.lang+"/contact.php"),
+            },
+            hashChangeCallback: function(pHash){
+                console.log(pHash);
             }
         });
 
         window.sectionManager.init();
 
-        if (("onhashchange" in window) && !($.browser.msie)) {
+        var sectionChangeHandler = function(){
+            $(".sectionChange>.navButton").removeClass("active");
+            $("a[href="+window.location.hash+"]>.navButton").addClass("active");
+        };
+        sectionChangeHandler();
+        if ("onhashchange" in window) {
             $(window).bind('hashchange',function(e) {
                 var targetSection = window.location.hash.replace("#","");
                     targetSection = (targetSection) ? targetSection : "landingSection";
-                window.sectionManager.changeSection(targetSection);
+                window.sectionManager.changeSection(targetSection, null, sectionChangeHandler);
             });
         } else {
             var prevHash = window.location.hash;
             window.setInterval(function () {
                if (window.location.hash != prevHash) {
-                    storedHash = window.location.hash;
+                    prevHash = window.location.hash;
                     var targetSection = window.location.hash.replace("#","");
                         targetSection = (targetSection) ? targetSection : "landingSection";
-                    window.sectionManager.changeSection(targetSection);
+                    window.sectionManager.changeSection(targetSection, null, sectionChangeHandler);
                }
             }, 100);
         }

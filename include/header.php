@@ -1,6 +1,6 @@
 <div id="header">
 	<div class="container">
-		<a href="javascript:void(0)" onclick="window.sectionManager.changeSection('landingSection')"><div class="logo"></div></a>
+		<a href="#landingSection"><div class="logo"></div></a>
 		<div class="lanuage">
 			<span class="langBtn">ENG</span>
 			<span class="langBtn">繁中</span>
@@ -9,21 +9,21 @@
 		</div>
 
 		<div class="navigator">
-			<a href="#aboutSection">
+			<a href="#aboutSection" class="sectionChange">
 				<div class="navButton">ABOUT US</div>
 			</a>
 			<div class="navSlash">/</div>   
-			<a href="#projectSection"><div class="navButton">PROJECTS</div></a>
+			<a href="#projectSection" class="sectionChange"><div class="navButton">PROJECTS</div></a>
 			<div class="navSlash">/</div> 
-			<a href="#newsSection"><div class="navButton">NEWS & MEDIA</div></a>
+			<a href="#newsSection" class="sectionChange"><div class="navButton">NEWS & MEDIA</div></a>
 			<div class="navSlash">/</div> 
-			<a href="#awardSection"><div class="navButton">AWARDS</div></a>
+			<a href="#awardSection" class="sectionChange"><div class="navButton">AWARDS</div></a>
 			<div class="navSlash">/</div> 
-			<a href="#susSection"><div class="navButton">SUSTAINABILITY</div></a>
+			<a href="#susSection" class="sectionChange"><div class="navButton">SUSTAINABILITY</div></a>
 			<div class="navSlash">/</div>
-			<a href="#careerSection"><div class="navButton">CAREER</div></a>
+			<a href="#careerSection" class="sectionChange"><div class="navButton">CAREER</div></a>
 			<div class="navSlash">/</div> 
-			<a href="#contactSection"><div class="navButton">CONTACTS</div></a>
+			<a href="#contactSection" class="sectionChange"><div class="navButton">CONTACTS</div></a>
 			<div class="navSlash end">/</div> 
 			<div class="clearfix"></div>
 		</div>

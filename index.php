@@ -19,6 +19,10 @@
 <link rel="stylesheet" href="css/common.css" />
 <link rel="stylesheet" href="css/main.css" />
 <script type="text/javascript" src="components/jquery/jquery.min.js"></script>
+<script type="text/javascript">
+	window.lno = (window.lno) ? window.lno:{};
+	window.lno.lang = "<?php $_GET['lang'] ?>";
+</script>
 </head>
 
 <body>
@@ -32,7 +36,7 @@
 			<table width="100%" height="100%">
 				<tr>
 					<td align="center" valign="middle">
-						<img src="img/home-content.png" alt="">
+						<img class="middleImage" src="img/home-content.png" alt="">
 					</td>
 				</tr>
 			</table>
