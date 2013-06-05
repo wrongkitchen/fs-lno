@@ -42,7 +42,7 @@
 			<table width="220" height="79">
 				<tbody>
 					<tr>
-						<td align="right" valign="bottom"><span class="cursorPointer">View PROJECT Details >></span></td>
+						<td align="right" valign="bottom"><span class="cursorPointer">VIEW PROJECT DETAILS >></span></td>
 					</tr>
 				</tbody>
 			</table>
