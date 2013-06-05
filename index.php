@@ -27,7 +27,7 @@
 
 <body>
 
-<div class="wrapper" id="abc">
+<div class="wrapper">
 
 	<?php require_once("include/header.php") ?>
 	
