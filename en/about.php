@@ -69,6 +69,7 @@
 							</div>
 						</div>
 						<div class="people">
+							<div class="closeBtn"></div>
 							<div class="orangeTitle">Dominic Lam, Principal Director</div>
 							<div class="content">
 								Shortly after graduating with honours from the University of Hong Kong in 1978, Dominic joined L&O and for 35 years has worked on many government and private developments. Dominic has built a diverse portfolio including theme parks, sports facilities, hotels, office buildings, commercial complexes, universities, institutional buildings and residential developments. He has considerable experience running large fast-track projects of high complexity.
@@ -219,7 +220,7 @@
 <script type="text/javascript">
 	window.lno = (window.lno) ? window.lno : {};
 	window.lno.about = {};
-	window.lno.about.scrollPane = $("#aboutRightContent").jScrollPane();
+	window.lno.about.scrollPane = $("#aboutRightContent").jScrollPane({ mouseWheelSpeed : 10 });
 	window.lno.about.refreshPane = function(){
 		window.lno.about.scrollPane.data('jsp').reinitialise();
 	};
@@ -239,9 +240,8 @@
 		$("#aboutRightContent").animate({ left:"-20px", opacity: 0 }, function(){
 			$(pHide).hide();
 			$(pShow).show();
-			$("#aboutRightContent").animate({ left:"0", opacity: 1 }, function(){
-        		if(pCallback) pCallback();
-			});
+			if(pCallback) pCallback();
+			$("#aboutRightContent").animate({ left:"0", opacity: 1 });
 		});
 	};
     $(".aboutLeftBtn.leftBtn").live("click", function(){
@@ -254,5 +254,9 @@
     $("#aboutPeopleView").live("click", function(){
     	$("#aboutPeople>.preview").hide();
     	$("#aboutPeople>.listing").show();
+    });
+    $(".people>.closeBtn").live("click", function(){
+    	$("#aboutPeople>.preview").show();
+    	$("#aboutPeople>.listing").hide();
     });
 </script>

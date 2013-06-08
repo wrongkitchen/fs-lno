@@ -94,7 +94,7 @@
 	window.lno = (window.lno) ? window.lno : {};
 	window.lno.project = {};
 	window.lno.projectsArray = [];
-	window.lno.project.scrollPane = $('#projectRightContent').jScrollPane();
+	window.lno.project.scrollPane = $('#projectRightContent').jScrollPane({ mouseWheelSpeed : 10 });
 	window.lno.project.currentProject = "";
 	window.lno.project.refreshPane = function(){
 		window.lno.project.scrollPane.data('jsp').reinitialise();
@@ -228,5 +228,15 @@
 		$("#projectCateWrap>a>.leftBtnInner").removeClass("active");
 		$(this).addClass("active");
 		$("#projectFeatureBtn").removeClass("active");
+	});
+	$(".viewBtn").live("click", function(){
+		$(this).hide();
+		$(this).parent().children(".backBtn").show();
+		$(this).parent().parent().children(".content").show();
+	});
+	$(".backBtn").live("click", function(){
+		$(this).hide();
+		$(this).parent().children(".viewBtn").show();
+		$(this).parent().parent().children(".content").hide();
 	});
 </script>

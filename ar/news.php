@@ -8,6 +8,8 @@
 
 			<div class="newsInner" id="newsNode">
 				<div class="listing">
+
+					
 					<div class="news">
 						<div class="img"><img src="img/news/news-00.jpg" alt=""></div>
 						<div class="year">2012-11-14/</div>
@@ -117,6 +119,9 @@
 						<div class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
 						<div class="clearfix"></div>
 					</div>
+
+
+
 				</div>
 
 				<div class="preview">
@@ -172,7 +177,7 @@
 			dataObj.title = $(this).children(".title").html();
 			dataObj.year = $(this).children(".year").html();
 			dataObj.img = $(this).children(".img").children("img").attr("src");
-			dataObj.content = $(this).children(".content").html();
+			dataObj.content = $(this).children(".	content").html();
 		
 		if(dataObj.img){
 			$("#newsNode>.preview").html(_.template($("#newsImageType").html(), dataObj));

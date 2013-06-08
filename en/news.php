@@ -6,6 +6,7 @@
 		</div>
 		<div id="newsRightContent" class="rightContent">
 
+		
 			<div class="newsInner" id="newsNode">
 				<div class="listing">
 					<div class="news">
@@ -17,7 +18,7 @@
 						</div>
 						<div class="clearfix"></div>
 					</div>
-
+			
 					<div class="news">
 						<div class="img"></div>
 						<div class="year">2012-10-30/</div>
@@ -29,7 +30,7 @@
 							There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</div>
 						<div class="clearfix"></div>
 					</div>
-
+			
 					<div class="news">
 						<div class="img"></div>
 						<div class="year">2012-10-29/</div>
@@ -37,7 +38,7 @@
 						<div class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
 						<div class="clearfix"></div>
 					</div>
-
+			
 					<div class="news">
 						<div class="img"></div>
 						<div class="year">2012-06-21/</div>
@@ -45,7 +46,7 @@
 						<div class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
 						<div class="clearfix"></div>
 					</div>
-
+			
 					<div class="news">
 						<div class="img"></div>
 						<div class="year">2012-06-20/</div>
@@ -53,7 +54,7 @@
 						<div class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
 						<div class="clearfix"></div>
 					</div>
-
+			
 					<div class="news">
 						<div class="img"></div>
 						<div class="year">2012-02-14/</div>
@@ -61,7 +62,7 @@
 						<div class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
 						<div class="clearfix"></div>
 					</div>
-
+			
 					<div class="news">
 						<div class="img"></div>
 						<div class="year">2011-12-30/</div>
@@ -69,7 +70,7 @@
 						<div class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
 						<div class="clearfix"></div>
 					</div>
-
+			
 					<div class="news">
 						<div class="img"></div>
 						<div class="year">2012-10-29/</div>
@@ -77,7 +78,7 @@
 						<div class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
 						<div class="clearfix"></div>
 					</div>
-
+			
 					<div class="news">
 						<div class="img"></div>
 						<div class="year">2012-09-12/</div>
@@ -85,7 +86,7 @@
 						<div class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
 						<div class="clearfix"></div>
 					</div>
-
+			
 					<div class="news">
 						<div class="img"></div>
 						<div class="year">2012-08-28/</div>
@@ -93,7 +94,7 @@
 						<div class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
 						<div class="clearfix"></div>
 					</div>
-
+			
 					<div class="news">
 						<div class="img"></div>
 						<div class="year">2012-03-13/</div>
@@ -101,7 +102,7 @@
 						<div class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
 						<div class="clearfix"></div>
 					</div>
-
+			
 					<div class="news">
 						<div class="img"></div>
 						<div class="year">2012-02-28/</div>
@@ -109,7 +110,7 @@
 						<div class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
 						<div class="clearfix"></div>
 					</div>
-
+			
 					<div class="news">
 						<div class="img"></div>
 						<div class="year">2012-01-09/</div>
@@ -117,11 +118,11 @@
 						<div class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
 						<div class="clearfix"></div>
 					</div>
+			
 				</div>
+			
+				<div class="preview"></div>
 
-				<div class="preview">
-					
-				</div>
 			</div>
 
 		</div>
@@ -153,36 +154,4 @@
 			<div class="content"><%=content%></div>
 		</div>
 	</div>
-</script>
-<script type="text/javascript">
-	window.lno = (window.lno) ? window.lno : {};
-	window.lno.news = {};
-	window.lno.news.scrollPane = $("#newsRightContent").jScrollPane();
-	window.lno.news.refreshPane = function(){
-		window.lno.news.scrollPane.data('jsp').reinitialise();
-	};
-	window.lno.news.closePreview = function(){
-		$("#newsNode>.listing").show();
-		$("#newsNode>.preview").hide();
-		$("#newsNode>.preview").empty();
-		window.lno.news.refreshPane();
-	};
-	$("#newsNode>.listing>.news").click(function(){
-		var dataObj = {};
-			dataObj.title = $(this).children(".title").html();
-			dataObj.year = $(this).children(".year").html();
-			dataObj.img = $(this).children(".img").children("img").attr("src");
-			dataObj.content = $(this).children(".content").html();
-		
-		if(dataObj.img){
-			$("#newsNode>.preview").html(_.template($("#newsImageType").html(), dataObj));
-			$("#newsNode>.listing").hide();
-			$("#newsNode>.preview").show();
-		} else {
-			$("#newsNode>.preview").html(_.template($("#newsTextType").html(), dataObj));
-			$("#newsNode>.listing").hide();
-			$("#newsNode>.preview").show();
-		}
-		window.lno.news.refreshPane();
-	});
 </script>

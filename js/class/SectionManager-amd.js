@@ -13,14 +13,14 @@ define(function(){
         this.animating = false;
     };
     SectionManager.fn = SectionManager.prototype;
-    SectionManager.fn.init = function(){
+    SectionManager.fn.init = function(pCallback){
         var _this = this;
         var hashString = "landingSection";
         if(window.location.hash){
             if(_this.getSection(window.location.hash.replace("#", "")))
                 hashString = window.location.hash.replace("#", "");
         }
-        _this.changeSection(hashString);
+        _this.changeSection(hashString, pCallback);
     };
     SectionManager.fn.getSection = function(pName){
         if(this.options.sectionList[pName])
@@ -137,11 +137,14 @@ define(function(){
     SectionBase.fn.fadeIn = function(pTime, pCallback){ 
         var _this = this;
         _this.preload(function(){
+            $(".rightContent").css("left", "50px");
+            $(".rightContent").animate({ "left":"0px" }, pTime);
             _this.el.fadeIn(pTime, function(){ if(pCallback) pCallback(); }); 
             _this.inScene = true; 
         });
     };
     SectionBase.fn.fadeOut = function(pTime, pCallback){ 
+        $(".rightContent").animate({ "left":"-50px" }, pTime);
         this.el.fadeOut(pTime, function(){ if(pCallback) pCallback(); }); 
         this.inScene = false; 
     };

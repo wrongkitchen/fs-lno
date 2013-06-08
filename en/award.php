@@ -54,7 +54,7 @@
 <script type="text/javascript">
 	window.lno = (window.lno) ? window.lno : {};
 	window.lno.award = {};
-	window.lno.award.scrollPane = $('#awardRightContent').jScrollPane();
+	window.lno.award.scrollPane = $('#awardRightContent').jScrollPane({ mouseWheelSpeed : 10 });
 	window.lno.award.refreshPane = function(){
 		window.lno.award.scrollPane.data('jsp').reinitialise();
 	};

@@ -10,7 +10,8 @@ require.config({
         CommonFunction : "js/class/CommonFunction",
         SectionManager : "js/class/SectionManager-amd",
         jscrollpane    : "components/jscrollpane/script/jquery.jscrollpane.min",
-        mousewheel     : "components/jscrollpane/script/jquery.mousewheel"
+        mousewheel     : "components/jscrollpane/script/jquery.mousewheel",
+        common         : "js/common"
     },
     shim: {
         "underscore"    : { deps: ["jquery"], exports:"_" },
@@ -21,11 +22,12 @@ require.config({
         "mousewheel"    : { deps: ["jquery", "jscrollpane"] },
         "vegas"     	: { deps: ["jquery"] },
         "CommonFunction": { deps: ["jquery"] },
-        "SectionManager": { deps: ['jquery', 'CommonFunction', "fancybox"] }
+        "SectionManager": { deps: ['jquery', 'CommonFunction', "fancybox"] },
+        "common"        : { deps: ['jquery'] } 
     }
 });
 
-require(["jquery", "underscore", "SectionManager", "CommonFunction", "fancybox", "vegas", "jscrollpane", "mousewheel"], function($, _, SM){
+require(["jquery", "underscore", "SectionManager", "CommonFunction", "fancybox", "vegas", "jscrollpane", "mousewheel", "common"], function($, _, SM){
 
     $(document).ready(function(){
 
@@ -48,17 +50,29 @@ require(["jquery", "underscore", "SectionManager", "CommonFunction", "fancybox",
             }
         });
 
-        window.sectionManager.init();
+        window.sectionManager.init(function(){
+            sectionChangeHandler();
+        });
 
         var sectionChangeHandler = function(){
+            var curSectionID = window.sectionManager.currentSection.el.attr("id");
+            if(curSectionID == "newsContent"){
+                window.lno.news.init();
+            }
+        };
+
+        var animateNavLine = function(){
             $(".sectionChange>.navButton").removeClass("active");
             $("a[href="+window.location.hash+"]>.navButton").addClass("active");
+            var curActiveBtn = $(".sectionChange>.navButton.active");
+            $(".navigator>.bottomLine").animate({ left:curActiveBtn.position().left+"px", width: curActiveBtn.width()+"px" });
         };
-        sectionChangeHandler();
+
         if ("onhashchange" in window) {
             $(window).bind('hashchange',function(e) {
                 var targetSection = window.location.hash.replace("#","");
                     targetSection = (targetSection) ? targetSection : "landingSection";
+                animateNavLine();
                 window.sectionManager.changeSection(targetSection, null, sectionChangeHandler);
             });
         } else {
@@ -68,6 +82,7 @@ require(["jquery", "underscore", "SectionManager", "CommonFunction", "fancybox",
                     prevHash = window.location.hash;
                     var targetSection = window.location.hash.replace("#","");
                         targetSection = (targetSection) ? targetSection : "landingSection";
+                    animateNavLine();
                     window.sectionManager.changeSection(targetSection, null, sectionChangeHandler);
                }
             }, 100);
@@ -95,6 +110,8 @@ require(["jquery", "underscore", "SectionManager", "CommonFunction", "fancybox",
     			{ src:'img/bg/10.jpg' }
     		]
     	});
+
+        animateNavLine();
 
     });
 

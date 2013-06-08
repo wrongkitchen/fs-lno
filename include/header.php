@@ -2,16 +2,15 @@
 	<div class="container">
 		<a href="#landingSection"><div class="logo"></div></a>
 		<div class="lanuage">
-			<span class="langBtn">ENG</span>
+			<span class="langBtn active">ENG</span>
 			<span class="langBtn">繁中</span>
 			<span class="langBtn">簡中</span>
 			<span class="langBtn">المؤس</span>
 		</div>
 
 		<div class="navigator">
-			<a href="#aboutSection" class="sectionChange">
-				<div class="navButton">ABOUT US</div>
-			</a>
+			<div class="bottomLine"></div>
+			<a href="#aboutSection" class="sectionChange"><div class="navButton">ABOUT US</div></a>
 			<div class="navSlash">/</div>   
 			<a href="#projectSection" class="sectionChange"><div class="navButton">PROJECTS</div></a>
 			<div class="navSlash">/</div> 
