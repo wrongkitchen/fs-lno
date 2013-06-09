@@ -65,7 +65,8 @@ require(["jquery", "underscore", "SectionManager", "CommonFunction", "fancybox",
             $(".sectionChange>.navButton").removeClass("active");
             $("a[href="+window.location.hash+"]>.navButton").addClass("active");
             var curActiveBtn = $(".sectionChange>.navButton.active");
-            $(".navigator>.bottomLine").animate({ left:curActiveBtn.position().left+"px", width: curActiveBtn.width()+"px" });
+            if(curActiveBtn.length)
+                $(".navigator>.bottomLine").animate({ left:curActiveBtn.position().left+"px", width: curActiveBtn.width()+"px" });
         };
 
         if ("onhashchange" in window) {
